@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'glacial';
-  src: url('GlacialIndifferenceRegular.ttf') format('truetype');
+  font-family: "glacial";
+  src: url("GlacialIndifferenceRegular.ttf") format("truetype");
 }
 
 html {
@@ -9,7 +9,7 @@ html {
 
 body {
   color: #fff;
-  font-family: 'glacial', sans-serif;
+  font-family: "glacial", sans-serif;
   overflow-x: hidden;
 }
 
@@ -28,8 +28,6 @@ a {
 a:hover {
   color: #828c96;
 }
-
-
 
 .span-top {
   margin: 32px 0px 32px;
@@ -58,7 +56,7 @@ a:hover {
   border-radius: 1.5rem;
   letter-spacing: 1.6px;
   font-size: 1rem;
-  padding: .3em 1em;
+  padding: 0.3em 1em;
   margin-top: 1.3rem;
 }
 
@@ -112,10 +110,10 @@ nav .social-icons {
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 
@@ -132,17 +130,18 @@ nav .social-icons {
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 .animated-icon span:nth-child(1) {
   top: 0;
 }
 
-.animated-icon span:nth-child(2), .animated-icon2 span:nth-child(3) {
+.animated-icon span:nth-child(2),
+.animated-icon2 span:nth-child(3) {
   top: 16px;
 }
 
@@ -206,11 +205,11 @@ nav .social-icons {
   font-size: 3.5rem;
   color: #ff4d5a;
   letter-spacing: 0.13em;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   height: auto;
   /* right: 30%; */
   /* margin-bottom: 70px; */
-  text-shadow: 2px 2px 5px #393E46;
+  text-shadow: 2px 2px 5px #393e46;
 }
 
 .title-img-container {
@@ -583,7 +582,6 @@ nav .social-icons {
   margin-right: 2rem;
 }
 
-
 /******** Media Queries *********/
 
 /* Desktops */
@@ -617,9 +615,9 @@ nav .social-icons {
     font-size: 4.2rem;
     color: #ff4d5a;
     letter-spacing: 0.13em;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     height: auto;
-    text-shadow: 2px 2px 5px #393E46;
+    text-shadow: 2px 2px 5px #393e46;
   }
 
   .title-img-container {
@@ -734,7 +732,6 @@ nav .social-icons {
     width: 68%;
   }
 
-
   /* Laptops */
   @media screen and (max-width: 1540px) {
     html {
@@ -766,11 +763,11 @@ nav .social-icons {
       font-size: 3.5rem;
       color: #ff4d5a;
       letter-spacing: 0.13em;
-      font-family: 'Josefin Sans', sans-serif;
+      font-family: "Josefin Sans", sans-serif;
       height: auto;
       /* right: 30%; */
       /* margin-bottom: 70px; */
-      text-shadow: 2px 2px 5px #393E46;
+      text-shadow: 2px 2px 5px #393e46;
     }
 
     .title-img-container {
@@ -885,466 +882,464 @@ nav .social-icons {
       width: 68%;
     }
 
-
-
-
-/* iPad Screens */
-@media screen and (max-width: 1028px) {
-  html {
-    overflow-x: hidden;
-  }
-
-  .navbar-nav .nav-link {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-  .animated-icon {
-    margin: 0;
-  }
-
-  .my-name-container {
-    margin: 30rem 0 0;
-  }
-
-  #title h1 {
-    font-size: 5rem;
-  }
-
-  #title p {
-    font-size: 2.3rem;
-    margin-top: 1.5rem;
-  }
-
-  .title-img-container {
-    width: 105vw;
-    height: 105vw;
-    left: 9%;
-    top: -35%;
-  }
-
-  .lights_container {
-    right: -30%;
-    height: 90vw;
-    width: 90vw;
-  }
-
-  .stars_container {
-    top: 60%;
-    right: -30%;
-    height: 100vw;
-    width: 100vw;
-  }
-
-  .fog2 {
-    top: 70%;
-    left: 30%;
-    width: 65%;
-  }
-
-  .fog3 {
-    top: 80%;
-    left: -45%;
-    width: 65%;
-  }
-
-
-  #gameplay-programming .container-fluid {
-    padding: 40% 15% 3%
-  }
-
-  #carousel .container-fluid {
-    padding: 3% 1% 2%;
-  }
-
-  #penguin-vs-monsters .image {
-    width: 80%;
-  }
-
-  #galaxy-pew-pew .image {
-    width: 45%;
-  }
-
-  #beep-boop .image {
-    width: 80%;
-  }
-
-  #brek-blok .image {
-    width: 75%;
-  }
-
-  #the-void .image {
-    width: 80%;
-  }
-
-  #magic-number .image {
-    width: 80%;
-  }
-
-  #sumo-fight .image {
-    width: 80%;
-  }
-
-  #reflex .image {
-    width: 80%;
-  }
-
-  #notangry-birds .image {
-    width: 75%;
-  }
-
-  #nut-car .image {
-    width: 75%;
-  }
-
-  #the-runner .image {
-    width: 75%;
-  }
-
-  #hungry-stampede .image {
-    width: 75%;
-  }
-
-  .carousel-control-next {
-    right: -10px;
-  }
-
-  .carousel-control-prev {
-    left: -10px;
-  }
-
-  .carousel-indicators {
-    display: none;
-  }
-
-  .unity-badge {
-    width: 15%;
-  }
-
-  #description .container-fluid {
-    padding: 9% 0 0;
-    position: relative;
-    left: 7.2rem;
-  }
-
-  #description h3 {
-    width: 550px;
-    font-size: 2.8rem;
-    padding-bottom: 15px;
-  }
-
-  #description h5 {
-    font-size: 1.5rem;
-    width: 550px;
-    line-height: 1.5;
-  }
-
-  #description li {
-    font-size: 1.4rem;
-    width: 550px;
-    line-height: 2;
-  }
-
-  .btn {
-    font-size: 1.5rem;
-  }
-
-  #content .container-fluid {
-    padding: 4% 13% 0;
-  }
-
-  #web-development h4 {
-    font-size: 1.5rem;
-  }
-
-  #content h3 {
-    font-size: 2.8rem;
-    padding-top: 1rem;
-  }
-
-  #content h5 {
-    font-size: 1.4rem;
-    letter-spacing: 0.1em;
-  }
-
-  #content .btn {
-    margin-top: 1rem;
-    margin-bottom: 20%;
-  }
-
-  #about-me .container-fluid {
-    padding: 5% 13% 3%;
-  }
-
-  #about-me h1 {
-    font-size: 5rem;
-  }
-
-  #about-me p {
-    font-size: 1.5rem;
-  }
-
-  #contact-me .container-fluid {
-    padding: 45% 13% 50%;
-  }
-
-  #contact-me h1 {
-    font-size: 4.2rem;
-  }
-
-  #contact-me h4 {
-    font-size: 1.6rem;
-  }
-}
-
-/* Mobile Devices */
-@media screen and (max-width: 426px) {
-  html {
-    overflow-x: hidden;
-  }
-
-  .navbar-nav .nav-link {
-    padding-right: 1.5rem;
-    padding-left: 0;
-  }
-
-  #title h1 {
-    font-size: 3.5rem;
-    line-height: 1;
-    letter-spacing: 0.25em;
-  }
-
-  #title h4 {
-    font-size: 1.3rem;
-    letter-spacing: 0.15em;
-  }
-
-  #title p {
-    font-size: 1.3rem;
-    margin-top: 1.5rem;
-  }
-
-  .title-img-container {
-    width: 120vw;
-    height: 120vw;
-    left: 3%;
-    top: -46%;
-  }
-
-  .lights_container {
-    right: -27%;
-    height: 100vw;
-    width: 100vw;
-  }
-
-  .stars_container {
-    top: 60%;
-    right: -27%;
-    height: 110vw;
-    width: 110vw;
-  }
-
-  .navbar {
-    padding: 0.9rem 1.2rem 0;
-    margin-bottom: 1.5rem;
-    width: 375px;
-  }
-
-  .navbar-brand {
-    font-size: 0.9rem;
-    letter-spacing: 0.4rem;
-  }
-
-  .animated-icon {
-    left: 1.3rem;
-  }
-
-  .animated-icon span {
-    width: 70%;
-  }
-
-  .icon {
-    display: none;
-  }
-
-  .my-name-container {
-    margin: 18rem 0 0;
-  }
-
-  .carousel-control-next {
-    right: -10px;
-  }
-
-  .carousel-control-prev {
-    left: -10px;
-  }
-
-  .carousel-indicators {
-    display: none;
-  }
-
-  .unity-badge {
-    width: 18%;
-  }
-
-  #gameplay-programming h1 {
-    font-size: 2.6rem;
-  }
-
-  #gameplay-programming h4 {
-    font-size: 1rem;
-    letter-spacing: 0.15em;
-  }
-
-  #web-development h1 {
-    font-size: 3rem;
-    padding-top: 20%;
-  }
-
-  #about-me h1 {
-    font-size: 3rem;
-  }
-
-  #gameplay-programming .container-fluid {
-    padding: 5% 10% 0;
-  }
-
-  #carousel .container-fluid {
-    padding: 7% 1%;
-  }
-
-  /* .galaxy-pew-pew img {
+    /* iPad Screens */
+    @media screen and (max-width: 1028px) {
+      html {
+        overflow-x: hidden;
+      }
+
+      .navbar-nav .nav-link {
+        padding-right: 0;
+        padding-left: 0;
+      }
+
+      .animated-icon {
+        margin: 0;
+      }
+
+      .my-name-container {
+        margin: 30rem 0 0;
+      }
+
+      #title h1 {
+        font-size: 5rem;
+      }
+
+      #title p {
+        font-size: 2.3rem;
+        margin-top: 1.5rem;
+      }
+
+      .title-img-container {
+        width: 105vw;
+        height: 105vw;
+        left: 9%;
+        top: -35%;
+      }
+
+      .lights_container {
+        right: -30%;
+        height: 90vw;
+        width: 90vw;
+      }
+
+      .stars_container {
+        top: 60%;
+        right: -30%;
+        height: 100vw;
+        width: 100vw;
+      }
+
+      .fog2 {
+        top: 70%;
+        left: 30%;
+        width: 65%;
+      }
+
+      .fog3 {
+        top: 80%;
+        left: -45%;
+        width: 65%;
+      }
+
+      #gameplay-programming .container-fluid {
+        padding: 40% 15% 3%;
+      }
+
+      #carousel .container-fluid {
+        padding: 3% 1% 2%;
+      }
+
+      #penguin-vs-monsters .image {
+        width: 80%;
+      }
+
+      #galaxy-pew-pew .image {
+        width: 45%;
+      }
+
+      #beep-boop .image {
+        width: 80%;
+      }
+
+      #brek-blok .image {
+        width: 75%;
+      }
+
+      #the-void .image {
+        width: 80%;
+      }
+
+      #magic-number .image {
+        width: 80%;
+      }
+
+      #sumo-fight .image {
+        width: 80%;
+      }
+
+      #reflex .image {
+        width: 80%;
+      }
+
+      #notangry-birds .image {
+        width: 75%;
+      }
+
+      #nut-car .image {
+        width: 75%;
+      }
+
+      #the-runner .image {
+        width: 75%;
+      }
+
+      #hungry-stampede .image {
+        width: 75%;
+      }
+
+      .carousel-control-next {
+        right: -10px;
+      }
+
+      .carousel-control-prev {
+        left: -10px;
+      }
+
+      .carousel-indicators {
+        display: none;
+      }
+
+      .unity-badge {
+        width: 15%;
+      }
+
+      #description .container-fluid {
+        padding: 9% 0 0;
+        position: relative;
+        left: 7.2rem;
+      }
+
+      #description h3 {
+        width: 550px;
+        font-size: 2.8rem;
+        padding-bottom: 15px;
+      }
+
+      #description h5 {
+        font-size: 1.5rem;
+        width: 550px;
+        line-height: 1.5;
+      }
+
+      #description li {
+        font-size: 1.4rem;
+        width: 550px;
+        line-height: 2;
+      }
+
+      .btn {
+        font-size: 1.5rem;
+      }
+
+      #content .container-fluid {
+        padding: 4% 13% 0;
+      }
+
+      #web-development h4 {
+        font-size: 1.5rem;
+      }
+
+      #content h3 {
+        font-size: 2.8rem;
+        padding-top: 1rem;
+      }
+
+      #content h5 {
+        font-size: 1.4rem;
+        letter-spacing: 0.1em;
+      }
+
+      #content .btn {
+        margin-top: 1rem;
+        margin-bottom: 20%;
+      }
+
+      #about-me .container-fluid {
+        padding: 5% 13% 3%;
+      }
+
+      #about-me h1 {
+        font-size: 5rem;
+      }
+
+      #about-me p {
+        font-size: 1.5rem;
+      }
+
+      #contact-me .container-fluid {
+        padding: 45% 13% 50%;
+      }
+
+      #contact-me h1 {
+        font-size: 4.2rem;
+      }
+
+      #contact-me h4 {
+        font-size: 1.6rem;
+      }
+    }
+
+    /* Mobile Devices */
+    @media screen and (max-width: 426px) {
+      html {
+        overflow-x: hidden;
+      }
+
+      .navbar-nav .nav-link {
+        padding-right: 1.5rem;
+        padding-left: 0;
+      }
+
+      #title h1 {
+        font-size: 3.5rem;
+        line-height: 1;
+        letter-spacing: 0.25em;
+      }
+
+      #title h4 {
+        font-size: 1.3rem;
+        letter-spacing: 0.15em;
+      }
+
+      #title p {
+        font-size: 1.3rem;
+        margin-top: 1.5rem;
+      }
+
+      .title-img-container {
+        width: 120vw;
+        height: 120vw;
+        left: 3%;
+        top: -46%;
+      }
+
+      .lights_container {
+        right: -27%;
+        height: 100vw;
+        width: 100vw;
+      }
+
+      .stars_container {
+        top: 60%;
+        right: -27%;
+        height: 110vw;
+        width: 110vw;
+      }
+
+      .navbar {
+        padding: 0.9rem 1.2rem 0;
+        margin-bottom: 1.5rem;
+        width: 375px;
+      }
+
+      .navbar-brand {
+        font-size: 0.9rem;
+        letter-spacing: 0.4rem;
+      }
+
+      .animated-icon {
+        left: 1.3rem;
+      }
+
+      .animated-icon span {
+        width: 70%;
+      }
+
+      .icon {
+        display: none;
+      }
+
+      .my-name-container {
+        margin: 18rem 0 0;
+      }
+
+      .carousel-control-next {
+        right: -10px;
+      }
+
+      .carousel-control-prev {
+        left: -10px;
+      }
+
+      .carousel-indicators {
+        display: none;
+      }
+
+      .unity-badge {
+        width: 18%;
+      }
+
+      #gameplay-programming h1 {
+        font-size: 2.6rem;
+      }
+
+      #gameplay-programming h4 {
+        font-size: 1rem;
+        letter-spacing: 0.15em;
+      }
+
+      #web-development h1 {
+        font-size: 3rem;
+        padding-top: 20%;
+      }
+
+      #about-me h1 {
+        font-size: 3rem;
+      }
+
+      #gameplay-programming .container-fluid {
+        padding: 5% 10% 0;
+      }
+
+      #carousel .container-fluid {
+        padding: 7% 1%;
+      }
+
+      /* .galaxy-pew-pew img {
     width: 45
   } */
-  #penguin-vs-monsters .image {
-    width: 80%;
-  }
+      #penguin-vs-monsters .image {
+        width: 80%;
+      }
 
-  #galaxy-pew-pew .image {
-    width: 60%;
-  }
+      #galaxy-pew-pew .image {
+        width: 60%;
+      }
 
-  #beep-boop .image {
-    width: 80%;
-  }
+      #beep-boop .image {
+        width: 80%;
+      }
 
-  #brek-blok .image {
-    width: 80%;
-  }
+      #brek-blok .image {
+        width: 80%;
+      }
 
-  #the-void .image {
-    width: 80%;
-  }
+      #the-void .image {
+        width: 80%;
+      }
 
-  #magic-number .image {
-    width: 80%;
-  }
+      #magic-number .image {
+        width: 80%;
+      }
 
-  #sumo-fight .image {
-    width: 80%;
-  }
+      #sumo-fight .image {
+        width: 80%;
+      }
 
-  #reflex .image {
-    width: 80%;
-  }
+      #reflex .image {
+        width: 80%;
+      }
 
-  #notangry-birds .image {
-    width: 80%;
-  }
+      #notangry-birds .image {
+        width: 80%;
+      }
 
-  #nut-car .image {
-    width: 80%;
-  }
+      #nut-car .image {
+        width: 80%;
+      }
 
-  #the-runner .image {
-    width: 80%;
-  }
+      #the-runner .image {
+        width: 80%;
+      }
 
-  #hungry-stampede .image {
-    width: 80%;
-  }
+      #hungry-stampede .image {
+        width: 80%;
+      }
 
-  #description .container-fluid {
-    padding-left: 2rem;
-    position: relative;
-    left: 0;
-    width: 280px;
-  }
+      #description .container-fluid {
+        padding-left: 2rem;
+        position: relative;
+        left: 0;
+        width: 280px;
+      }
 
-  #description h3 {
-    width: 500px;
-    font-size: 1.7rem;
-    padding-bottom: 3px;
-  }
+      #description h3 {
+        width: 500px;
+        font-size: 1.7rem;
+        padding-bottom: 3px;
+      }
 
-  #description h5 {
-    width: 350px;
-    font-size: 1rem;
-    line-height: 1.5;
-  }
+      #description h5 {
+        width: 350px;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
 
-  #description li {
-    width: 300px;
-    font-size: 0.9rem;
-    line-height: 1.6;
-    letter-spacing: 1px;
-  }
+      #description li {
+        width: 300px;
+        font-size: 0.9rem;
+        line-height: 1.6;
+        letter-spacing: 1px;
+      }
 
-  .btn {
-    font-size: 1rem;
-  }
+      .btn {
+        font-size: 1rem;
+      }
 
-  #gameplay-programming .row {
-    padding-bottom: 3rem;
-  }
+      #gameplay-programming .row {
+        padding-bottom: 3rem;
+      }
 
-  #content .container-fluid {
-    padding: 4% 10% 0;
-  }
+      #content .container-fluid {
+        padding: 4% 10% 0;
+      }
 
-  #web-development h4 {
-    font-size: 1rem;
-    letter-spacing: 0.15em;
-  }
+      #web-development h4 {
+        font-size: 1rem;
+        letter-spacing: 0.15em;
+      }
 
-  #content h3 {
-    font-size: 1.7rem;
-    padding-top: 17px;
-  }
+      #content h3 {
+        font-size: 1.7rem;
+        padding-top: 17px;
+      }
 
-  #content h5 {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    padding: 1px 0 0;
-    letter-spacing: 0.1em;
-  }
+      #content h5 {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        padding: 1px 0 0;
+        letter-spacing: 0.1em;
+      }
 
-  #content .btn {
-    margin-top: 1rem;
-    margin-bottom: 20%;
-  }
+      #content .btn {
+        margin-top: 1rem;
+        margin-bottom: 20%;
+      }
 
-  #about-me .container-fluid {
-    padding: 20% 10% 3%;
-  }
+      #about-me .container-fluid {
+        padding: 20% 10% 3%;
+      }
 
-  #about-me h1 {
-    font-size: 2.6rem;
-  }
+      #about-me h1 {
+        font-size: 2.6rem;
+      }
 
-  #about-me p {
-    font-size: 1.1rem;
-  }
+      #about-me p {
+        font-size: 1.1rem;
+      }
 
-  #contact-me .container-fluid {
-    padding: 80% 10%;
-  }
+      #contact-me .container-fluid {
+        padding: 80% 10%;
+      }
 
-  #contact-me h1 {
-    font-size: 2.6rem;
-  }
+      #contact-me h1 {
+        font-size: 2.6rem;
+      }
 
-  #contact-me h4 {
-    font-size: 1.3rem;
+      #contact-me h4 {
+        font-size: 1.3rem;
+      }
+    }
   }
 }
