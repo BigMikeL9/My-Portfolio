@@ -29,6 +29,22 @@ a:hover {
   color: #828c96;
 }
 
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #051d39;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsla(0, 0%, 43.5%, 0.46);
+  border-radius: 8px;
+  border: 4px solid transparent;
+  box-shadow: none;
+}
+
 .span-top {
   margin: 32px 0px 32px;
 }
@@ -229,6 +245,9 @@ nav .social-icons {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+
+  opacity: 0;
+  transition: all 1.5s;
 }
 
 .title-img-container img {
@@ -325,18 +344,59 @@ nav .social-icons {
 }
 
 /* Projects Section */
-#gameplay-programming {
+#web-development {
   background: linear-gradient(#040e1b, #061f3c);
 }
 
-#gameplay-programming .container-fluid {
-  padding: 20% 15% 3%;
+#web-development .container-fluid {
+  padding: 20% 15% 0;
 }
 
-#gameplay-programming h1 {
+#web-development h4 {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+}
+
+#content .container-fluid {
+  padding: 4% 17% 0;
+}
+
+#content img {
+  border-radius: 12px;
+  margin-bottom: 3%;
+}
+
+#web-development h1 {
   font-size: 5.5rem;
   letter-spacing: 0.2em;
   line-height: 1.2;
+}
+
+#content h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: #ff4d5a;
+}
+
+#content h5 {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  padding: 4px 0 0;
+  letter-spacing: 0.12em;
+}
+
+#content .btn {
+  margin-bottom: 10%;
+}
+
+#gameplay-programming {
+  background: linear-gradient(#061f3c, #061f3c);
+}
+
+#gameplay-programming .container-fluid {
+  padding: 1% 15% 3%;
 }
 
 #gameplay-programming h4 {
@@ -487,47 +547,6 @@ nav .social-icons {
   padding-bottom: 10rem;
 }
 
-#web-development {
-  background: linear-gradient(#061f3c, #061f3c);
-}
-
-#web-development .container-fluid {
-  padding: 1% 15% 0;
-}
-
-#web-development h4 {
-  font-size: 1.5rem;
-  letter-spacing: 0.1em;
-  line-height: 1.2;
-}
-
-#content .container-fluid {
-  padding: 4% 17% 0;
-}
-
-#content img {
-  border-radius: 12px;
-  margin-bottom: 3%;
-}
-
-#content h3 {
-  font-size: 2rem;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  color: #ff4d5a;
-}
-
-#content h5 {
-  font-size: 1.1rem;
-  line-height: 1.5;
-  padding: 4px 0 0;
-  letter-spacing: 0.12em;
-}
-
-#content .btn {
-  margin-bottom: 10%;
-}
-
 /* About Me Section */
 #about-me {
   background: linear-gradient(#061f3c, #061f3d);
@@ -598,6 +617,8 @@ nav .social-icons {
 
   .my-name-container {
     padding: 11rem 0 0;
+    opacity: 0;
+    transition: all 1.5s;
   }
 
   #title h1 {
