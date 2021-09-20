@@ -904,7 +904,7 @@ nav .social-icons {
     }
 
     /* iPad Screens */
-    @media screen and (max-width: 1028px) {
+    @media screen and (max-width: 1024px) {
       html {
         overflow-x: hidden;
       }
@@ -935,7 +935,7 @@ nav .social-icons {
         width: 105vw;
         height: 105vw;
         left: 9%;
-        top: -35%;
+        top: 10%;
       }
 
       .lights_container {
@@ -965,6 +965,10 @@ nav .social-icons {
 
       #gameplay-programming .container-fluid {
         padding: 40% 15% 3%;
+      }
+
+      #web-development {
+        padding-top: 25rem;
       }
 
       #carousel .container-fluid {
@@ -1111,8 +1115,14 @@ nav .social-icons {
       }
     }
 
+    @media screen and (max-width: 480px) {
+      #web-development {
+        padding-top: 5rem;
+      }
+    }
+
     /* Mobile Devices */
-    @media screen and (max-width: 426px) {
+    @media screen and (max-width: 480px) {
       html {
         overflow-x: hidden;
       }
@@ -1161,7 +1171,7 @@ nav .social-icons {
       .navbar {
         padding: 0.9rem 1.2rem 0;
         margin-bottom: 1.5rem;
-        width: 375px;
+        width: 100%;
       }
 
       .navbar-brand {
@@ -1362,5 +1372,33 @@ nav .social-icons {
         font-size: 1.3rem;
       }
     }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #description li {
+    width: 250px;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    letter-spacing: 1px;
+  }
+
+  #description h5 {
+    width: 300px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  #about-me p {
+    font-size: 0.9rem;
+  }
+
+  #web-development {
+    padding-top: 5rem;
+  }
+
+  #web-development h1 {
+    font-size: 2.5rem;
+    padding-top: 20%;
   }
 }
