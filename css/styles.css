@@ -31,7 +31,7 @@ a:hover {
 
 /* scroll bar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 16px;
 }
 
 ::-webkit-scrollbar-track {
@@ -39,10 +39,11 @@ a:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: hsla(0, 0%, 43.5%, 0.46);
+  height: 84px;
+  border: 5px solid transparent;
   border-radius: 8px;
-  border: 4px solid transparent;
-  box-shadow: none;
+  background-clip: content-box;
+  background-color: hsla(0, 0%, 43.5%, 0.46);
 }
 
 .span-top {
@@ -74,6 +75,11 @@ a:hover {
   font-size: 1rem;
   padding: 0.3em 1em;
   margin-top: 1.3rem;
+}
+
+.btn:hover {
+  transform: translateY(-0.2rem);
+  transition: all 0.5s ease;
 }
 
 /* Nav Bar */
@@ -192,6 +198,18 @@ nav .social-icons {
 }
 
 /* Title Section */
+.title__curtain {
+  /* display: none; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #020b16;
+  z-index: 99999;
+  transition: all 0.7s;
+}
+
 #title {
   height: 100vh;
   background: linear-gradient(#061f3d, #040e1b);
