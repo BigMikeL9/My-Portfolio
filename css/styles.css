@@ -199,7 +199,6 @@ nav .social-icons {
 
 /* Title Section */
 .title__curtain {
-  /* display: none; */
   position: fixed;
   top: 0;
   left: 0;
@@ -207,7 +206,8 @@ nav .social-icons {
   height: 100vh;
   background: #020b16;
   z-index: 99999;
-  transition: all 0.7s;
+  /* transition: all 0.6s ease-in-out; */
+  transition: all 0.5s cubic-bezier(0.28, 0.21, 0.91, 0.63);
 }
 
 #title {
@@ -216,12 +216,33 @@ nav .social-icons {
   position: relative;
 }
 
-/* #title .container-fluid {
-  padding: 7% 10% 15%
-} */
-
 .my-name-container {
   padding: 5rem 0 0;
+}
+
+.my-name-container h1 {
+  transform: translateX(-50rem);
+  transition: all 1s;
+}
+
+.my-name-container span:nth-child(3) {
+  transform: translateX(-30rem);
+  transition: all 1s;
+}
+
+.my-name-container span:nth-child(4) {
+  transform: translateX(-90rem);
+  transition: all 1s;
+}
+
+.my-name-container h4:nth-child(5) {
+  transform: translateX(-120rem);
+  transition: all 1s;
+}
+
+.my-name-container h4:nth-child(6) {
+  transform: translateX(-150rem);
+  transition: all 1s;
 }
 
 #title h1 {
@@ -280,11 +301,36 @@ nav .social-icons {
   height: 40%;
 }
 
+.second-title-img-container div:nth-child(3) {
+  transform: translateX(60rem);
+}
+
+.second-title-img-container div:nth-child(4) {
+  transform: translateX(230rem);
+}
+
+.second-title-img-container div:nth-child(5) {
+  transform: translateX(130rem);
+}
+
+.second-title-img-container div:nth-child(6) {
+  transform: translateX(170rem);
+}
+
+.second-title-img-container div:nth-child(7) {
+  transform: translateX(70rem);
+}
+
+.second-title-img-container div:nth-child(8) {
+  transform: translateY(10rem);
+}
+
 .t {
   position: relative;
   display: block;
   left: 0px;
   top: 0px;
+  transition: all 1s;
 }
 
 .i {
@@ -292,6 +338,8 @@ nav .social-icons {
   display: block;
   left: 0px;
   top: 0px;
+
+  transition: all 1s;
 }
 
 .img-size {
