@@ -53,65 +53,71 @@ titleSectionAnimation();
 // let parallaxInstance = new Parallax(parallax);
 
 ////////////////////////////////////
-// ***** Reveals Content as we scroll down --> using Intersection Observer API *****
+// --> Intersection Observer API *****
 
-const allContainers = document.querySelectorAll(".container-fluid");
+const allContainers = document.querySelectorAll(".container-anim");
+const allTitles = document.querySelectorAll(".h1-anim");
+const allSubTitles = document.querySelectorAll(".h4-anim");
+const allSpanTop = document.querySelectorAll(".span-top-anim");
+const allSpanBottom = document.querySelectorAll(".span-bottom-anim");
 
-const sectionObsCallBack = function (entries, observer) {
+const obsCallBack = function (entries, observer) {
   const [entry] = entries;
-  // console.log(entry.target); // the elements that we intersected
 
   // Guard Clause
   if (!entry.isIntersecting) return;
   entry.target.classList.remove("content--hidden");
+  entry.target.classList.remove("h1--hidden");
+  entry.target.classList.remove("h4--hidden");
+  entry.target.classList.remove("span-top--hidden");
+  entry.target.classList.remove("span-bottom--hidden");
 
-  // prevents observer from observing the current revealed section after it is revealed. [better for performance]
+  // prevents observing revealed elements. [better for performance]
   observer.unobserve(entry.target);
 };
 
-const sectionObsOptions = {
+const obsOptions = {
   root: null,
-  threshold: 0, // greater than '0' because we dont want to show the section right as it enters the viewport, but a little bit later. Section will be revealed only when it is 15 percent visible.
+  threshold: 0, // reveals at 0%
 };
 
-const sectionObserver = new IntersectionObserver(
-  sectionObsCallBack,
-  sectionObsOptions
-);
+// ***** Reveals Content as we scroll down
+const containerObserver = new IntersectionObserver(obsCallBack, obsOptions);
 
 allContainers.forEach((container) => {
-  container.classList.add("section--hidden"); // change if necessary
-  sectionObserver.observe(container); // change if necessary
+  container.classList.add("content--hidden"); // change if necessary
+  containerObserver.observe(container); // change if necessary
 });
 
-////////////////////////////////////
-// ***** Reveals Section titles as we scroll down --> using Intersection Observer API *****
-
-const allTitles = document.querySelectorAll(".h1-anim");
-
-const titleObsCallBack = function (entries, observer) {
-  const [entry] = entries;
-  // console.log(entry.target); // the elements that we intersected
-
-  // Guard Clause
-  if (!entry.isIntersecting) return;
-  entry.target.classList.remove("h1--hidden");
-
-  // prevents observer from observing the current revealed section after it is revealed. [better for performance]
-  observer.unobserve(entry.target);
-};
-
-const titleObsOptions = {
-  root: null,
-  threshold: 0, // greater than '0' because we dont want to show the section right as it enters the viewport, but a little bit later. Section will be revealed only when it is 15 percent visible.
-};
-
-const titleObserver = new IntersectionObserver(
-  titleObsCallBack,
-  titleObsOptions
-);
+// ***** Reveals Section titles as we scroll down
+const titleObserver = new IntersectionObserver(obsCallBack, obsOptions);
 
 allTitles.forEach((title) => {
-  title.classList.add("h1--hidden"); // change if necessary
-  titleObserver.observe(title); // change if necessary
+  title.classList.add("h1--hidden");
+  titleObserver.observe(title);
 });
+
+// ***** Reveals Sub Section titles as we scroll down
+const subTitleObserver = new IntersectionObserver(obsCallBack, obsOptions);
+
+allSubTitles.forEach((subTitle) => {
+  subTitle.classList.add("h4--hidden");
+  subTitleObserver.observe(subTitle);
+});
+
+// ***** Reveals span top as we scroll down
+const spanTopObserver = new IntersectionObserver(obsCallBack, obsOptions);
+
+allSpanTop.forEach((spanTop) => {
+  spanTop.classList.add("span-top--hidden");
+  spanTopObserver.observe(spanTop);
+});
+
+// ***** Reveals span bottom as we scroll down
+const spanBottomObserver = new IntersectionObserver(obsCallBack, obsOptions);
+
+allSpanBottom.forEach((spanTop) => {
+  spanTop.classList.add("span-bottom--hidden");
+  spanBottomObserver.observe(spanTop);
+});
+////////////////////////////////////

@@ -415,8 +415,10 @@ nav .social-icons {
   transform: translateY(10rem);
 }
 
+.container-anim,
 .h1-anim,
-.span-anim,
+.span-top-anim,
+.span-bottom-anim,
 .h4-anim {
   transition: all 1s ease-out;
 }
@@ -427,15 +429,15 @@ nav .social-icons {
 }
 
 .h4--hidden {
-  transform: translateX(-120rem);
+  transform: translateX(-95rem);
 }
 
 .span-top--hidden {
-  transform: translateX(-30rem);
+  transform: translateX(-20rem);
 }
 
 .span-bottom--hidden {
-  transform: translateX(-90rem);
+  transform: translateX(-15rem);
 }
 
 .container-fluid {
