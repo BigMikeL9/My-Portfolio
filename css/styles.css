@@ -409,13 +409,52 @@ nav .social-icons {
   width: 68%;
 }
 
+/* Content Animations */
+.content--hidden {
+  opacity: 0;
+  transform: translateY(10rem);
+}
+
+.h1-anim,
+.span-anim,
+.h4-anim {
+  transition: all 1s ease-out;
+}
+
+.h1--hidden {
+  opacity: 0;
+  transform: translateX(-70rem);
+}
+
+.h4--hidden {
+  transform: translateX(-120rem);
+}
+
+.span-top--hidden {
+  transform: translateX(-30rem);
+}
+
+.span-bottom--hidden {
+  transform: translateX(-90rem);
+}
+
+.container-fluid {
+  transition: all 0.7s ease-in-out;
+}
 /* Projects Section */
+
 #web-development {
   background: linear-gradient(#040e1b, #061f3c);
 }
 
 #web-development .container-fluid {
   padding: 20% 15% 0;
+}
+
+#web-development h1 {
+  font-size: 5.5rem;
+  letter-spacing: 0.2em;
+  line-height: 1.2;
 }
 
 #web-development h4 {
@@ -431,12 +470,6 @@ nav .social-icons {
 #content img {
   border-radius: 12px;
   margin-bottom: 3%;
-}
-
-#web-development h1 {
-  font-size: 5.5rem;
-  letter-spacing: 0.2em;
-  line-height: 1.2;
 }
 
 #content h3 {
