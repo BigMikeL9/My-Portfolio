@@ -81,7 +81,7 @@ const obsOptions = {
   threshold: 0, // reveals at 0%
 };
 
-// ***** Reveals Content as we scroll down
+// ***** Reveals Content as we scroll
 const containerObserver = new IntersectionObserver(obsCallBack, obsOptions);
 
 allContainers.forEach((container) => {
@@ -89,7 +89,7 @@ allContainers.forEach((container) => {
   containerObserver.observe(container); // change if necessary
 });
 
-// ***** Reveals Section titles as we scroll down
+// ***** Reveals Section titles as we scroll
 const titleObserver = new IntersectionObserver(obsCallBack, obsOptions);
 
 allTitles.forEach((title) => {
@@ -97,7 +97,7 @@ allTitles.forEach((title) => {
   titleObserver.observe(title);
 });
 
-// ***** Reveals Sub Section titles as we scroll down
+// ***** Reveals Sub Section titles as we scroll
 const subTitleObserver = new IntersectionObserver(obsCallBack, obsOptions);
 
 allSubTitles.forEach((subTitle) => {
@@ -105,7 +105,7 @@ allSubTitles.forEach((subTitle) => {
   subTitleObserver.observe(subTitle);
 });
 
-// ***** Reveals span top as we scroll down
+// ***** Reveals span top as we scroll
 const spanTopObserver = new IntersectionObserver(obsCallBack, obsOptions);
 
 allSpanTop.forEach((spanTop) => {
@@ -113,7 +113,7 @@ allSpanTop.forEach((spanTop) => {
   spanTopObserver.observe(spanTop);
 });
 
-// ***** Reveals span bottom as we scroll down
+// ***** Reveals span bottom as we scroll
 const spanBottomObserver = new IntersectionObserver(obsCallBack, obsOptions);
 
 allSpanBottom.forEach((spanTop) => {

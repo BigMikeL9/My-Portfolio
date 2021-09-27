@@ -1064,6 +1064,24 @@ nav .social-icons {
         width: 65%;
       }
 
+      /* Content Animations */
+      .h1--hidden {
+        opacity: 0;
+        transform: translateX(-40rem);
+      }
+
+      .h4--hidden {
+        transform: translateX(-35rem);
+      }
+
+      .span-top--hidden {
+        transform: translateX(-10rem);
+      }
+
+      .span-bottom--hidden {
+        transform: translateX(-7rem);
+      }
+
       #gameplay-programming .container-fluid {
         padding: 40% 15% 3%;
       }
@@ -1216,12 +1234,6 @@ nav .social-icons {
       }
     }
 
-    @media screen and (max-width: 480px) {
-      #web-development {
-        padding-top: 5rem;
-      }
-    }
-
     /* Mobile Devices */
     @media screen and (max-width: 480px) {
       html {
@@ -1296,6 +1308,24 @@ nav .social-icons {
         margin: 18rem 0 0;
       }
 
+      /* Content Animations */
+      .h1--hidden {
+        opacity: 0;
+        transform: translateX(-17rem);
+      }
+
+      .h4--hidden {
+        transform: translateX(-15rem);
+      }
+
+      .span-top--hidden {
+        transform: translateX(-8rem);
+      }
+
+      .span-bottom--hidden {
+        transform: translateX(-5rem);
+      }
+
       .carousel-control-next {
         right: -10px;
       }
@@ -1310,6 +1340,10 @@ nav .social-icons {
 
       .unity-badge {
         width: 18%;
+      }
+
+      #web-development {
+        padding-top: 5rem;
       }
 
       #gameplay-programming h1 {
@@ -1338,9 +1372,6 @@ nav .social-icons {
         padding: 7% 1%;
       }
 
-      /* .galaxy-pew-pew img {
-    width: 45
-  } */
       #penguin-vs-monsters .image {
         width: 80%;
       }
@@ -1501,5 +1532,23 @@ nav .social-icons {
   #web-development h1 {
     font-size: 2.5rem;
     padding-top: 20%;
+  }
+
+  /* Content Animations */
+  .h1--hidden {
+    opacity: 0;
+    transform: translateX(-2rem);
+  }
+
+  .h4--hidden {
+    transform: translateX(-8rem);
+  }
+
+  .span-top--hidden {
+    transform: translateX(-5rem);
+  }
+
+  .span-bottom--hidden {
+    transform: translateX(-3rem);
   }
 }
