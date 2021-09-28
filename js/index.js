@@ -114,10 +114,10 @@ allSpanTop.forEach((spanTop) => {
 });
 
 // ***** Reveals span bottom as we scroll
-const spanBottomObserver = new IntersectionObserver(obsCallBack, obsOptions);
+const spanBotObserver = new IntersectionObserver(obsCallBack, obsOptions);
 
 allSpanBottom.forEach((spanTop) => {
   spanTop.classList.add("span-bottom--hidden");
-  spanBottomObserver.observe(spanTop);
+  spanBotObserver.observe(spanTop);
 });
 ////////////////////////////////////
