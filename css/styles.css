@@ -524,6 +524,20 @@ nav .social-icons {
   left: 70px;
 }
 
+#duckbite .image {
+  width: 66%;
+  height: auto;
+  margin: auto;
+  border-radius: 35px;
+}
+
+#catbite .image {
+  width: 66%;
+  height: auto;
+  margin: auto;
+  border-radius: 35px;
+}
+
 #penguin-vs-monsters .image {
   width: 66%;
   height: auto;
@@ -1092,6 +1106,16 @@ nav .social-icons {
 
       #carousel .container-fluid {
         padding: 3% 1% 2%;
+      }
+
+      #duckbite .image {
+        width: 80%;
+        border-radius: 20px;
+      }
+
+      #catbite .image {
+        width: 80%;
+        border-radius: 20px;
       }
 
       #penguin-vs-monsters .image {
