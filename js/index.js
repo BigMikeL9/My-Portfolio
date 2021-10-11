@@ -19,15 +19,16 @@ const burgerMenuAnimation = function () {
 
 burgerMenuAnimation();
 
+////////////////////////////////////
 const titleSectionAnimation = function () {
   // fade in animation
   titleImgCont1.style.opacity = "1";
   nameCont.style.opacity = "1";
 
   // curtain slide up
-  setTimeout(() => {
-    titleCurtain.style.height = "0";
-  }, 100);
+  // setTimeout(() => {
+  //   titleCurtain.style.height = "0";
+  // }, 100);
 
   // title image slide left animation
   [...titleImgCont2.children].forEach((child) => {
